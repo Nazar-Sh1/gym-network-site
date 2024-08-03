@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icone/icone-web.png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main class="main">
+      <div class="main__title"><h1>OUR PRICE</h1></div>
+      <div class="main__subscriptions">
+        <div class="main__subscriptions-adult">
+          <h2 class="main__subscriptions-title">ADULT SUBSCRIPTIONS</h2>
+          <div class="main__subscriptions-list">
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">BASE</h4>
+              <p class="main__subscription-price">$150</p>
+              <p class="main__subscription-description">
+                Access to the gym in the selected sports space. +Fitness
+                marathon for free!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">group classes</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the gym
+                  </p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">safe</p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">MULTI</h4>
+              <p class="main__subscription-price">$250</p>
+              <p class="main__subscription-description">
+                Access to the Les Mills and APOLLO NEXT gym and group programs.
+                +Fitness marathon for free!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">group classes</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the gym
+                  </p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">safe</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional training in pool</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">basin</p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">ULTRA</h4>
+              <p class="main__subscription-price">$500</p>
+              <p class="main__subscription-description">
+                Access to all sports spaces, training and services for you and
+                your friend in the home space. +Fitness marathon for free!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">premium group classes</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">premium locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the gym
+                  </p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">safe</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional training in pool</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">basin</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">bath complex</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">freezing for 30 days</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">premium gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">bath complex</p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+          </div>
+        </div>
+        <div class="main__subscriptions-children">
+          <h2 class="main__subscriptions-title">CHILDREN'S SUBSCRIPTIONS</h2>
+          <div class="main__subscriptions-list">
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">BASE KID</h4>
+              <p class="main__subscription-price">$60</p>
+              <p class="main__subscription-description">
+                Access to the gym and basic group classes for your children at
+                the club. +Free participation in the fitness marathon!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">age 3 - 13 years</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">game room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's pool</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">aqua group training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the pool
+                  </p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">KID +</h4>
+              <p class="main__subscription-price">$120</p>
+              <p class="main__subscription-description">
+                Various sports and fitness classes for children. +Free workshops
+                and activities for children!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">age 3 - 13 years</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">game room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's pool</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">aqua group training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the pool
+                  </p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">bath complex</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+            <div class="main__subscription">
+              <h4 class="main__subscription-title">KID PRO</h4>
+              <p class="main__subscription-price">$200</p>
+              <p class="main__subscription-description">
+                Premium programs for children, including individual training and
+                specialized classes. +Free consultations with a personal trainer
+                for a child!
+              </p>
+              <div class="main__subscription-benefits">
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">game room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">premium locker room</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">children's pool</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">mobile application</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">aqua group training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">
+                    promotional training in the pool
+                  </p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">promotional squash training</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">basin</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">freezing for 30 days</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">premium gym</p>
+                </div>
+                <div class="main__benefit">
+                  <img
+                    src="images/icone/check-mark.png"
+                    alt="check-mark"
+                    class="main__benefit-icon"
+                  />
+                  <p class="main__benefit-text">bath complex</p>
+                </div>
+              </div>
+              <a href="index.html" class="main__subscription-link">BUY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__image">
+        <img src="images/photo/zen-gym.png" alt="Zen Gym" />
+      </div>
+    </main>
+    <footer>
+      <nav
+        class="footer__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
+  </body>
+</html>

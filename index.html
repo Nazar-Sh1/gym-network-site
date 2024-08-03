@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icone/icone-web.png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div class="header__image-container">
+        <img
+          src="images/photo/dumbbell-window.png"
+          alt="Dumbbell-Window"
+          class="header__image"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <section class="advantages">
+        <h2 class="advantages__title">OUR ADVANTAGES</h2>
+        <p class="advantages__description">
+          Our gym is the perfect place to reach your fitness goals. We offer
+          modern equipment, professional trainers, creating an atmosphere where
+          there is no place for condemnation and hate, where a beginner and an
+          experienced athlete do not interfere, but help each other.
+        </p>
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <img
+              src="images/photo/dumbbell-pvdpis.png"
+              alt="dumbbell-pvdpis"
+              class="advantages__image"
+            />
+            <h4 class="advantages__item-title">Modern equipment</h4>
+            <p class="advantages__item-description">
+              Our gym is equipped with the latest simulators and sports
+              complexes from the world's leading manufacturers. You will be able
+              to use modern treadmills, exercise bikes, strength machines and
+              other equipment that will help you achieve your sports goals
+              faster and more efficiently.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img
+              src="images/photo/discover.png"
+              alt="discover"
+              class="advantages__image"
+            />
+            <h4 class="advantages__item-title">
+              Convenient location and work schedule
+            </h4>
+            <p class="advantages__item-description">
+              Our gym is in a convenient location, which allows you to easily
+              reach it from any part of the city. We work from morning to late
+              evening, so you can choose the most convenient time for training.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img
+              src="images/photo/body-in-progrss.png"
+              alt="body-in-progrss"
+              class="advantages__image"
+            />
+            <h4 class="advantages__item-title">Professional trainers</h4>
+            <p class="advantages__item-description">
+              We have a team of certified trainers with many years of
+              experience. They will develop an individual training program for
+              you, taking into account your personal goals, physical condition
+              and level of training. Our trainers will support you at every
+              stage of your journey to a healthy and active life.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img
+              src="images/photo/gym-hub.png"
+              alt="gym-hub"
+              class="advantages__image"
+            />
+            <h4 class="advantages__item-title">Innovative services</h4>
+            <p class="advantages__item-description">
+              We offer a range of additional services such as personal fitness
+              tracking, nutritional advice and massage sessions. Our innovative
+              solutions will help you achieve maximum results and improve your
+              well-being.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq__accordion">
+          <button class="faq__accordion-button">Section 1</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 1.</p>
+          </div>
+
+          <button class="faq__accordion-button">Section 2</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 2.</p>
+          </div>
+
+          <button class="faq__accordion-button">Section 3</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 3.</p>
+          </div>
+          <button class="faq__accordion-button">Section 4</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 4.</p>
+          </div>
+
+          <button class="faq__accordion-button">Section 5</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 5.</p>
+          </div>
+
+          <button class="faq__accordion-button">Section 6</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 6.</p>
+          </div>
+          <button class="faq__accordion-button">Section 7</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 7.</p>
+          </div>
+
+          <button class="faq__accordion-button">Section 8</button>
+          <div class="faq__accordion-content">
+            <p>Content for section 8.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav
+        class="footer__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
+  </body>
+</html>
