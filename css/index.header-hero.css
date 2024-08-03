@@ -1,0 +1,40 @@
+.header__image-container {
+  width: 100%;
+  max-width: 600px; /* Встановіть максимальну ширину відповідно до ваших потреб */
+  margin: 0 auto; /* Центрування контейнера */
+  /* float: right; Флоат праворуч */
+  margin-top: 100px;
+  /* margin-left: 500px; */
+  margin-bottom: 500px;
+  /* margin-right: 80px; */
+  text-align: right; /* Вирівнювання зображення вправо */
+}
+
+.header__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .header__content {
+    display: grid; /* Встановлює контейнер як сітку */
+    grid-template-columns: 1fr 1fr; /* Дві колонки рівної ширини */
+    align-items: start; /* Вирівнювання по вертикалі */
+    gap: 20px; /* Відстань між колонками (опційно) */
+    padding: 20px; /* Відступи навколо контейнера (опційно) */
+  }
+}
+
+.header__intro {
+  color: #d9d9d9;
+  padding-top: 95px;
+}
+
+.header__description {
+  padding-right: 250px;
+}
+
+.header__title {
+  margin-bottom: 25px;
+}
