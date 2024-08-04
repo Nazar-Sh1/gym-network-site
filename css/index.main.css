@@ -1,0 +1,129 @@
+.advantages {
+  color: #d9d9d9;
+  padding: 20px;
+  background: linear-gradient(
+    90deg,
+    #030403 30%,
+    #201c10 80%,
+    #051203 90%
+  ) !important;
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__description {
+  width: 100%;
+  max-width: 600px; /* Встановіть максимальну ширину відповідно до ваших потреб */
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: left; /* Вирівнювання зображення вправо */
+}
+
+/* Контейнер для списку переваг */
+.advantages__list {
+  display: grid; /* Використання CSS Grid для контейнера */
+  grid-template-columns: repeat(2, 1fr); /* Дві колонки рівної ширини */
+  gap: 40px; /* Відстань між картками по горизонталі та вертикалі */
+}
+
+/* Стили для елементів списку */
+.advantages__item {
+  background: #253225; /* Фон для кожного елемента */
+  padding: 10px 15px; /* Відступи всередині елемента (збільшено висоту) */
+  border-radius: 50px; /* Скруглені кути */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для елемента */
+  width: 100%; /* Ширина картки 100% від колонок grid */
+  height: auto; /* Автоматична висота */
+}
+
+/* Контейнер для заголовка та зображення */
+.advantages__header {
+  display: grid; /* Використання CSS Grid для вирівнювання */
+  grid-template-columns: auto 1fr; /* Автоширина для зображення та 1fr для заголовка */
+  align-items: center; /* Вирівнювання по центру вертикально */
+  gap: 10px; /* Відстань між зображенням та заголовком */
+}
+
+/* Стили для зображень */
+.advantages__image {
+  max-width: 90px; /* Максимальна ширина зображення */
+  height: auto; /* Автоматична висота */
+  display: block; /* Блочний елемент */
+}
+
+/* Стили для заголовків */
+.advantages__item-title {
+  font-size: 1.2em; /* Розмір шрифту */
+  margin: 0; /* Прибираємо відступи */
+}
+
+/* Стили для описів */
+.advantages__item-description {
+  font-size: 0.9em; /* Зменшений розмір шрифту */
+  line-height: 1.4; /* Висота рядка */
+  margin-top: 10px; /* Відступ зверху */
+}
+
+/* Медіа-запит для пристроїв з меншими екранами */
+@media (max-width: 768px) {
+  .advantages__list {
+    grid-template-columns: 1fr; /* Одна колонка для вузьких екранів */
+    gap: 20px; /* Зменшена відстань між картками */
+  }
+}
+
+/* Контейнер для списку переваг */
+.faq__accordion {
+    max-width: 800px; /* Максимальна ширина контейнера */
+    margin: 20px auto; /* Відступи зверху і знизу 20px, центрування по горизонталі */
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+    gap: 20px; /* Відстань між елементами */
+  }
+  
+  /* Стили для кнопок аккордеона */
+  .faq__accordion-button {
+    font-family: "Julius Sans One", sans-serif;
+    background-color: #d9d9d9; /* Синій фон для кнопки */
+    color: #030403; /* Білий колір тексту */
+    cursor: pointer; /* Вказівний курсор при наведенні */
+    padding: 15px; /* Внутрішні відступи */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    border: none; /* Без рамки */
+    outline: none; /* Без обведення при фокусі */
+    width: calc(50% - 10px); /* Ширина кнопки на половину ширини контейнера з урахуванням відстані */
+    transition: background-color 0.4s ease; /* Плавний перехід кольору фону */
+    border-radius: 10px; /* Скруглені кути */
+  }
+  
+  .faq__accordion-button:hover {
+    background-color: #253225; /* Темніший синій колір при наведенні */
+  }
+  
+  /* Стили для контенту аккордеона */
+  .faq__accordion-content {
+    background-color: #253225; /* Світло-сірий фон */
+    display: none; /* Ховати контент за замовчуванням */
+    padding: 15px; /* Внутрішні відступи */
+    border: 1px solid #253225; /* Легка сірий рамка */
+    border-top: none; /* Без верхньої рамки */
+    border-radius: 0 0 10px 10px; /* Скруглені кути */
+    width: calc(100% - 20px); /* Ширина контенту на всю ширину контейнера з урахуванням відстані */
+    margin-top: -10px; /* Зменшення верхнього відступу для плавного переходу */
+  }
+  
+  .faq {
+    color: #030403;
+    padding: 50px;
+    /* margin-bottom: 100px; */
+    background: linear-gradient(90deg, #253225 5%, #0c100c 28%, #030403 90%);
+  }
+  
+  .faq__title {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #d9d9d9;
+  }
+  
