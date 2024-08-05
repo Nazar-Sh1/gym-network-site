@@ -1,13 +1,13 @@
 .header__image-container {
   width: 100%;
-  max-width: 600px; /* Встановіть максимальну ширину відповідно до ваших потреб */
-  margin: 0 auto; /* Центрування контейнера */
-  /* float: right; Флоат праворуч */
+  max-width: 600px;
+  margin: 0 auto;
+  /* float: right; */
   margin-top: 100px;
   /* margin-left: 500px; */
   margin-bottom: 200px;
   /* margin-right: 80px; */
-  text-align: right; /* Вирівнювання зображення вправо */
+  text-align: right;
 }
 
 .header__image {
@@ -18,11 +18,11 @@
 
 @media (min-width: 600px) {
   .header__content {
-    display: grid; /* Встановлює контейнер як сітку */
-    grid-template-columns: 1fr 1fr; /* Дві колонки рівної ширини */
-    align-items: start; /* Вирівнювання по вертикалі */
-    gap: 20px; /* Відстань між колонками (опційно) */
-    padding: 20px; /* Відступи навколо контейнера (опційно) */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
     padding-bottom: 0px;
   }
 }

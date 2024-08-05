@@ -1,108 +1,102 @@
-/* Основні стилі для навігаційного меню */
 .nav {
-  display: flex; /* Розміщує дочірні елементи в рядок */
-  align-items: center; /* Вирівнює елементи по вертикалі */
-  justify-content: space-between; /* Розподіляє простір між елементами */
-  padding: 10px; /* Додає відступи навколо навігаційного меню */
-  position: relative; /* Встановлює відносне позиціонування для дочірніх елементів */
-  z-index: 10; /* Забезпечує видимість поверх інших елементів */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
 }
 
-/* Стилі для логотипу */
 .nav__logo-container {
   max-width: 100px;
-  display: flex; /* Розміщує логотип по горизонталі */
-  align-items: center; /* Вирівнює логотип по вертикалі */
+  display: flex;
+  align-items: center;
 }
 
-/* Стилі для контейнера посилань */
 .nav__links-container {
-  display: flex; /* Розміщує посилання по горизонталі */
+  display: flex;
 }
 
-/* Список посилань */
 .nav__list {
-  display: flex; /* Розміщує елементи списку по горизонталі */
-  list-style: none; /* Видаляє маркери списку */
-  margin: 25px; /* Видаляє відступи */
-  padding: 0; /* Видаляє внутрішні відступи */
+  display: flex;
+  list-style: none;
+  margin: 25px;
+  padding: 0;
 }
 
 .nav__item {
-  margin: 0 12px; /* Додає відступи між елементами списку */
+  margin: 0 12px;
 }
 
 .nav-link__coaches {
   font-weight: 1;
   font-size: 14px;
-  text-decoration: none; /* Видаляє підкреслення */
+  text-decoration: none;
   background-color: #d9d9d9;
   padding: 7px 23px;
   border-radius: 35px;
-  color: #030403; /* Встановлює колір тексту (можете змінити за потреби) */
+  color: #030403;
 }
 
 .nav__link {
   font-weight: 1;
   font-size: 14px;
-  text-decoration: none; /* Видаляє підкреслення */
-  color: #030403; /* Встановлює колір тексту (можете змінити за потреби) */
+  text-decoration: none;
+  color: #030403;
   background-color: #d9d9d9;
   padding: 7px 35px;
   border-radius: 30px;
 }
 
-/* Стилі для бургер-меню */
 .nav__burger-container {
-  display: flex; /* Розміщує бургер-меню по горизонталі */
-  align-items: center; /* Вирівнює бургер-меню по вертикалі */
-  position: relative; /* Встановлює відносне позиціонування для дочірніх елементів */
-  cursor: pointer; /* Змінює вигляд курсора при наведенні */
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .nav__burger {
-  display: flex; /* Розміщує смужки бургер-меню по горизонталі */
-  flex-direction: column; /* Розміщує смужки по вертикалі */
+  display: flex;
+  flex-direction: column;
 }
 
 .nav__burger-bar {
-  width: 32px; /* Ширина смужок бургер-меню */
-  height: 10px; /* Висота смужок бургер-меню */
-  background-color: #d9d9d9; /* Колір смужок бургер-меню (можете змінити за потреби) */
-  margin: 6px 0; /* Відступи між смужками */
+  width: 32px;
+  height: 10px;
+  background-color: #d9d9d9;
+  margin: 6px 0;
   border-radius: 35px;
 }
 
-/* Список меню */
 .nav__menu {
-  display: none; /* Сховати меню за замовчуванням */
-  position: fixed; /* Встановлює меню поверх всіх інших елементів */
-  top: 0; /* Вирівнює меню по верху вікна */
-  left: 0; /* Вирівнює меню по лівому краю */
-  width: 100%; /* Встановлює ширину меню */
-  height: 100%; /* Встановлює висоту меню */
-  background-color: rgba(255, 255, 255, 0.95); /* Фоновий колір з прозорістю */
-  list-style: none; /* Видаляє маркери списку */
-  margin: 0; /* Видаляє відступи */
-  padding: 20px; /* Внутрішні відступи */
-  z-index: 100; /* Встановлює високий z-index для видимості поверх інших елементів */
-  opacity: 0; /* Сховати меню з використанням прозорості */
-  transition: opacity 0.3s ease; /* Додаємо перехід */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .nav__menu.show {
   display: block;
-  opacity: 1; /* Зробити меню видимим */
+  opacity: 1;
 }
 
 .nav__menu-item {
-  margin: 20px 0; /* Відступи між елементами меню */
+  margin: 20px 0;
 }
 
 .nav__menu-link {
-  display: block; /* Робить посилання блочним елементом для зручнішого натискання */
-  padding: 10px 15px; /* Додає відступи навколо посилань */
-  text-decoration: none; /* Видаляє підкреслення */
-  color: #030403; /* Встановлює колір тексту (можете змінити за потреби) */
-  font-size: 1.5rem; /* Збільшує розмір шрифту */
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #030403;
+  font-size: 1.5rem;
 }

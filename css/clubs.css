@@ -1,0 +1,68 @@
+.main {
+  color: #d9d9d9;
+}
+
+.main__heading {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.main__clubs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.club {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.club__name {
+  font-size: 40px;
+  font-weight: 1px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.club__image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.club__details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.club__logo {
+  max-width: 30px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .main__clubs {
+    grid-template-columns: 1fr;
+  }
+
+  .club {
+    margin-bottom: 20px;
+  }
+}
+
+.club__hours {
+  font-size: 0.9em;
+}
