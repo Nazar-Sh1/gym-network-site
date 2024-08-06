@@ -97,3 +97,9 @@
 .main__subscription-link:hover {
   background-color: #131913;
 }
+
+.main__image{
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
