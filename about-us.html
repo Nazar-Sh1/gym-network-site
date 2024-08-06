@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icone/icone-web.png"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main class="main-about">
+      <section class="about">
+        <div class="about__intro">
+          <h1 class="about__title">About Us</h1>
+        </div>
+        <div class="about__description">
+          <p>
+            Welcome to GYM Network, your premier destination for achieving a
+            healthy and active lifestyle! Our mission is to provide a welcoming,
+            motivating, and well-equipped environment where individuals of all
+            fitness levels can thrive.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Who We Are</h3>
+          <p class="about__section-description">
+            At GYM Network, we believe that fitness is for everyone. We are a
+            leading network of gyms committed to offering top-notch facilities,
+            innovative training programs, and exceptional customer service. Our
+            team is passionate about helping you reach your personal fitness
+            goals, whether you're just starting your fitness journey or are a
+            seasoned athlete.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Our Facilities</h3>
+          <p class="about__section-description">
+            Each of our locations is equipped with the latest state-of-the-art
+            fitness equipment, ensuring that you have access to the best tools
+            for your workout. From cardio machines and free weights to
+            specialized strength training equipment, we have everything you need
+            to push your limits and see results.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Professional Trainers</h3>
+          <p class="about__section-description">
+            Our certified trainers are here to guide, support, and inspire you.
+            With a wealth of experience and a deep understanding of fitness and
+            wellness, they are dedicated to creating personalized training plans
+            tailored to your individual needs and goals. Whether you're looking
+            for one-on-one coaching, group classes, or nutritional advice, our
+            trainers are ready to help you succeed.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Group Classes</h3>
+          <p class="about__section-description">
+            We offer a diverse range of group classes designed to keep you
+            engaged and motivated. From yoga and Pilates to high-intensity
+            interval training (HIIT) and dance fitness, our classes cater to all
+            interests and fitness levels. Join our vibrant community and
+            experience the fun and camaraderie of working out together.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Our Commitment to You</h3>
+          <p class="about__section-description">
+            At GYM Network, your health and safety are our top priorities. We
+            maintain the highest standards of cleanliness and hygiene, ensuring
+            a safe and comfortable environment for your workouts. Our friendly
+            and professional staff are always on hand to assist you and answer
+            any questions you may have.
+          </p>
+        </div>
+        <div class="about__section">
+          <h3 class="about__section-title">Why Choose Us</h3>
+          <ul class="about__list">
+            <li class="about__list-item">
+              <span class="about__list-item-title"
+                >State-of-the-Art Equipment:</span
+              >
+              Enjoy the latest and most advanced fitness machines and tools
+              available.
+            </li>
+            <li class="about__list-item">
+              <span class="about__list-item-title">Experienced Trainers:</span>
+              Benefit from the guidance and expertise of our certified
+              professionals.
+            </li>
+            <li class="about__list-item">
+              <span class="about__list-item-title">Diverse Classes:</span>
+              Participate in a wide range of classes that suit all interests and
+              fitness levels.
+            </li>
+            <li class="about__list-item">
+              <span class="about__list-item-title"
+                >Clean and Safe Environment:</span
+              >
+              Workout in a space that prioritizes your health and safety.
+            </li>
+            <li class="about__list-item">
+              <span class="about__list-item-title">Community Atmosphere:</span>
+              Be part of a supportive and energetic community that motivates you
+              to achieve your best.
+            </li>
+          </ul>
+        </div>
+        <div class="about__image-container">
+          <img
+            src="images/photo/elite-core.jpg"
+            alt="Elite Core"
+            class="about__image__lite-core"
+          />
+          <img
+            src="images/photo/activ-eydge.jpg"
+            alt="Activ Eydge"
+            class="about__image__activ-eydge"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav
+        class="footer__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
